@@ -1,0 +1,471 @@
+body , html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'cairo', sans-serif;
+    src: url('../cairo-font/Cairo-Black.ttf');
+    src: url('../cairo-font/Cairo-Bold.ttf');
+    src: url('../cairo-font/Cairo-ExtraLight.ttf');
+    src: url('../cairo-font/Cairo-Light.ttf');
+    src: url('../cairo-font/Cairo-Regular.ttf');
+    src: url('../cairo-font/Cairo-SemiBold.ttf');
+}
+
+::placeholder{
+    color: #a1acbd !important;
+}
+a , i { transition: all .3s ease-in-out; }
+a:hover { text-decoration: none;}
+
+.gred-blue {
+    background-image: linear-gradient(to right, #77bdfc, #619ed7, #4c81b2, #37658f, #224a6e);
+    padding: .75rem;
+    width: 80%;
+    border-radius: 1.5rem;
+    color: #fff !important;
+    border: none;
+}
+.gred-iceblue{
+    background-image: linear-gradient(to right, #77bdfc, #71caff, #71d7ff, #79e2ff, #87edfd);
+    padding: .75rem 2rem;
+    border-radius: 1.5rem;
+    color: #fff !important;
+    border: none;
+}
+.gred-purple{
+    background-image: linear-gradient(to right, #ef77fc, #da8dff, #c79eff, #b9acff, #b2b7fd);
+    padding: .75rem 2rem;
+    border-radius: 1.5rem;
+    color: #fff !important;
+    border: none;
+}
+.gred-yellow {
+    background-image: linear-gradient(to right, #fcef77, #ffdc81, #ffcc94, #ffc0a7, #fdbab7);
+    padding: .75rem 2rem;
+    border-radius: 1.5rem;
+    color: #fff !important;
+    border: none;
+}
+.gred-green {
+    background-image: linear-gradient(to right, #abb85a, #97af4a, #82a63a, #6c9d2b, #53941c);
+    padding: .75rem 2rem;
+    border-radius: 1.5rem;
+    color: #fff !important;
+    border: none;
+}
+button { cursor: pointer;}
+button:focus { outline: none;}
+.BG {
+    background-image: url('../imgs/vector1.png');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+header nav {
+    background-color: transparent;
+}
+header nav li { margin-right: 1.5rem; color: #224a6e;}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link
+{
+    color: #224a6e;
+    border-bottom: 3px solid #77bdfc;
+}
+header nav select.form-control {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+header nav select.form-control:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
+header nav .sign {
+    padding: .6rem 1.2rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+header a.link{ color: #77bdfc; text-decoration: underline;}
+header nav a:hover { text-decoration: none !important;}
+
+.Bg .meet { padding-top: 2rem; }
+.Bg .meet .carousel-caption { margin-bottom: 6rem;}
+.Bg .meet .carousel-caption h5 { color: #224a6e;}
+.Bg .meet .carousel-caption p { color: #a1acbd;}
+.meet .carousel-control-next, .carousel-control-prev{
+    width: 1% !important;
+}
+
+/******************************************************/
+/********* start services **********/
+.service , .info 
+, .announ{ padding: 2rem 0; }
+.service h5 , .info h5
+, .announ h5{
+    color: #224a6e;
+    padding-top: 1rem;
+}
+.service p , .info p
+, .announ p{
+    line-height: 1.7;
+    color: #a1acbd;
+}
+.service img { transition: all .3s linear;}
+.service img:hover { transform: scale(1.1);}
+.service .carousel-item { padding-bottom: 1rem;}
+/*******************************************************/
+/*********** start announ ***********/
+.announ .carousel .det{ float: left; }
+.announ .card { border-radius: 1rem;}
+/*******************************************/
+/******** start foooter **********/
+footer {
+    background-color: #e7f3fe;
+    padding: 2rem 0 1rem;
+}
+footer p { color: #224a6e; margin-top: 1rem;}
+footer .icons { text-align: left;}
+footer .icons img { margin-left: .5rem;}
+footer ul {
+    color: #224a6e; 
+    margin-top: 5rem; 
+    line-height: 1.6; 
+    text-align: center;  
+    list-style-type: none;
+}
+footer ul li { margin-top: 1rem;  margin-left: 1rem; }
+footer li::before {  
+    color: #77bdfc; 
+    content: "\2022"; 
+    display: inline-block;  
+    width: 1em;  
+
+    font-weight: bold;
+}
+a { color: #224a6e;}
+a:hover { color: #77bdfc;}
+footer .bottom {
+    padding-top: .5rem;
+    text-align: center;
+    font-size: 14px;
+}
+footer .bottom a { color: #77bdfc;}
+
+/************************************************************************************************
+                                start agency page 
+*************************************************************************************************/
+.agency .card {
+    margin: 0 auto;
+}
+.agency .nav{
+    background-color: #e7f3fe;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+}                                
+.agency .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    padding: .7rem 1rem;
+    background-image: linear-gradient(to right top, #77bdfc, #619ed7, #4c81b2, #37658f, #224a6e);
+    border-radius: 1.5rem;
+}
+h5 , h6 { color: #37658f;}
+p { color: #a1acbd;}
+.agency .pagination .page-link{
+    border: none;
+    color: #a1acbd;
+}
+.page-link:focus { box-shadow: none;}
+
+.cata-sub-nav {
+    background: #fff;
+    padding: 20px 15px 20px;
+    margin: 0 34px;
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* Remove the default scrollbar for WebKit implementations */
+  }
+  .cata-sub-nav::-webkit-scrollbar {
+        display: none;
+    }
+  .cata-sub-nav ul {
+    margin: 0;
+    display: block;
+    -webkit-padding-start: 0px;
+  }
+  .cata-sub-nav li {
+    display: inline-table;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+/************************************************************************************************
+                                start agency details page 
+*************************************************************************************************/
+.agency-details .clearfix{
+    position: relative;
+}
+.agency-details .clearfix a {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.agency-details p { line-height: 2;}
+.agency-details ul { color: #224a6e;}
+.agency-details li { color: #a1acbd; margin-top: 1rem;}
+.agency-details h5 { text-align: center;}
+
+/************************************************************************************************
+                                start tenders page 
+*************************************************************************************************/
+table th,
+table td{
+    border: 3px solid #fff !important;
+}
+table a{
+    text-decoration: underline;
+}
+.modal form input {
+    padding: 1.5rem;
+    background-color: #fafbfc;
+    border-radius: 1.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+.modal .form-control:focus { border: 1px solid #77bdfc; box-shadow: none;}
+.modal form a.btn {
+    width: 70%;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+/************************************************************************************************
+                                start contact us page 
+*************************************************************************************************/
+.contact-us { padding: 2rem 0;}
+
+.contact-us form input ,
+.contact-us form textarea ,
+.login form input {
+    padding: 1.5rem;
+    background-color: #fafbfc;
+    border-radius: 1.5rem;
+    width: 90%;
+    margin-top: 1.5rem;
+}
+.form-control:focus { border: 1px solid #77bdfc; box-shadow: none;}
+form a.btn {
+    width: 80%;
+    margin-top: 1rem;
+}
+.contact-us .media img { width: 50px;}
+.contact-us iframe {
+    width: 600px;
+    height: 400px;
+}
+
+/************************************************************************************************
+                                start Login page 
+*************************************************************************************************/
+.log-head { padding: 2rem 3rem;}
+.log-head a { text-decoration: underline; color: #224a6e;}
+.log-head .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover
+ { text-decoration: underline; color: #77bdfc;}
+.log-head .navbar-light .navbar-toggler {
+    width: 43px;
+    height: 33px;
+    font-size: 13px;
+}
+.login form input { width: 100%;}
+.login .pass { float: left; text-decoration: underline;}
+.login .creat a {
+    font-size: 14px;
+    color: #a1acbd;
+}
+.login .creat a span { color: #619ed7;}
+
+/************ verification code *****************/
+.divide input[type="text"] {
+    border: 1px solid #ccc;
+    color: dimgrey;
+    letter-spacing: 10ch;
+} 
+.login  span#app {
+    float: left;
+}
+.base-timer {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}  
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}  
+.base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+}  
+.base-timer__path-remaining.orange {
+    color: orange;
+} 
+.base-timer__path-remaining.red {
+    color: red;
+}  
+.base-timer__label {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+  
+/*********************************************/
+/*****************************************************
+         start subscribtion page
+******************************************************/
+.subscrib { padding: 2rem 0;}
+.subscrib .card {
+    border-radius: 1rem;
+    padding-bottom: 1.5rem;
+    border: none;
+}
+.subscrib .rounded { border-radius: .5rem !important;}
+.subscrib .card .card-img-top {
+    width: 90%;
+    margin: 0 auto;
+}
+/**********************************************************
+           Service request page
+***********************************************************/
+.login form textarea { border-radius: 1.5rem; background-color: #fafbfc; }
+form a.btn-send { width: 40%;}           
+.login .modal-body { padding: 3rem;}
+
+/**********************************************************
+          Profile Page
+***********************************************************/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #ffffff !important;
+}
+.tab-content a i{
+    font-size: 20px;
+}
+.tab-content a.change-pass{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.tab-content .notification{
+    background-color: #ffffff;
+    height: auto;
+    cursor: pointer;
+}
+.tab-content .notification:hover{
+    background-color: #e7f3fe;
+}
+.tab-content span {
+    color: #79e2ff;
+    float: left;
+    margin: 15px 0 0 0;
+}
+.change-password{
+
+    display: flex;
+    justify-content: space-between;
+}
+.col-form-label{
+    padding: 30px 30px 0 0 !important;
+}
+.hvr-problem .hvr-underline-reveal:before { bottom: -1px !important;}
+
+
+
+@media (min-width: 993px) and (max-width: 1198px){
+    .navbar-light .navbar-nav .nav-link { white-space: nowrap;}
+}
+@media (min-width: 774px) and (max-width: 1196px){
+    .Bg .meet .carousel-caption { margin-bottom: 0;}
+}
+@media (min-width: 320px) and (max-width: 766px){
+    footer .logo { text-align: center;}
+    footer .icons { text-align: center;}
+    footer ul { margin-top: 2rem;}
+    .gred-blue { padding: .5rem 1rem; font-size: 14px;}
+    .login img { margin-top: 2rem;}
+}
+@media (min-width: 320px) and (max-width: 991px){
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active, 
+    .navbar-light .navbar-nav .nav-link.show, 
+    .navbar-light .navbar-nav .show>.nav-link { border-bottom: none; color: #77bdfc;}
+}
+@media (min-width: 320px) and (max-width: 424px){
+     .agency .nav { width: max-content; font-size: 9px;}
+} 
+
+@media (min-width: 993px) and (max-width: 1198px){
+    header nav li { margin-right: 0;}
+}
+@media only screen and (max-width: 1024px){
+    .meet .carousel-caption { bottom: 75px;}
+}
+@media only screen and (max-width: 990px){
+    .meet .carousel-caption { bottom: -55px;}
+}
+@media only screen and (max-width: 768px){
+    .divide input[type="text"] { letter-spacing: 5.5ch; } 
+}
+
+@media only screen and (max-width: 425px){
+    .divide input[type="text"] { letter-spacing: 7ch; } 
+}
+@media only screen and (max-width: 375px){
+    .divide input[type="text"] { letter-spacing: 6ch; } 
+}
+@media only screen and (max-width: 320px){
+    .divide input[type="text"] { letter-spacing: 4.5ch; } 
+    .change-password{
+        display: block !important;
+    }
+    .change-password .change-pass{
+        float: left;
+        font-size: 12px;
+    }
+    #v-pills-messages .media img{
+        width: 80px !important;
+    }
+}
+    @media only screen and (max-width: 425px){
+    .agency .nav-link { padding: 0; font-size: 15px;}
+    .agency .nav-pills .nav-link.active, .nav-pills .show>.nav-link{ padding: .5rem .7rem;}
+}
